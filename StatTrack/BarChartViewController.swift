@@ -35,6 +35,7 @@ class BarChartViewController: UIViewController {
         chart.noDataText = "No data available"
         // user interaction
         chart.isUserInteractionEnabled = false
+        // adds limit line to graph
         let ll = ChartLimitLine(limit: 50.0, label: "Target")
         chart.rightAxis.addLimitLine(ll)
         
